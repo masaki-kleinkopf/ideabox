@@ -1,0 +1,86 @@
+/* * { border: 1px solid black; } */
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+}
+
+h1{
+  color: #E9E9F3;
+  font-weight: bold;
+}
+
+h2{
+  color: #BFBFDD;
+}
+
+.show-starred{
+  color: #E9E9F3;
+  background: #5356A4;
+}
+
+main{
+  display: flex;
+  height: 900px;
+  align-items: stretch;
+}
+
+.main-page{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  height:300px;
+  background-color: #A9AAD2;
+}
+
+label{
+  color: #1f1f3d;
+  font-weight: bold;
+}
+
+.save{
+  background-color: #1f1f3d;
+  color: #E9E9F3;
+}
+
+.idea-card{
+  height: 250px;
+  width: 200px;
+}
+
+.star{
+  background-color: #1f1f3d;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.comment{
+  display: flex;
+  color: white;
+  background-color: #5356A4;
+}
+
+.card-content{
+  padding-left: 15px;
+  border: 2px solid #5356A4;
+}
+
+.icons{
+  width: 33px;
+  height: auto;
+}
+
+.nav{
+  background-color: #1f1f3d;
+  width: 30%;
+  height: 100%;
+  padding-left: 15px;
+}
