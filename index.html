@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+  <body>
+    <main>
+     <section class='nav'>
+      <h1>IdeaBox</h1>
+      <h2>Filter Starred Ideas<h2>
+      <button class='show-starred'>Show Starred Ideas</button>
+
+    </section>
+
+    <div class='main-page'>
+    <section class='input'>
+      <form class='input-field'>
+        <div>
+          <label for='title-input'>Title</label><br>
+          <input type='text' name='title-input' id='title-input'>
+        </div>
+        <div>
+          <label for='body-input'>Body</label><br>
+          <input type='text' name='body-input' id='body-input'>
+        </div>
+
+        <button class='save'>Save</button>
+        <div>
+          <form class='search-bar' action='search'>
+          <button type="submit">hourglassicon</button>
+          <input type="text" placeholder="Search ideas" name="search">
+          </form>
+        <div>
+       </form>
+    </section>
+    <section class='display'>
+      <article class='saved-cards-grid'></article>
+      <article class='idea-card'>
+        <div class='star'>
+            <img class='icons' src='./assets/star-active.svg'>
+            <img class='icons' src='./assets/menu-close.svg'>
+        </div>
+        <div class='card-content'>
+          <h3>Idea title</h3>
+          <p>Idea body. Don\'t ever play yourself.
+            Every chance I get, I water the plants, Lion! Cloth talk. </p>
+        </div>
+        <div class='comment'>
+          <img class='icons' src='./assets/comment.svg'>
+          <p>Comment</p>
+        </div>
+
+      </article>
+    </section>
+    </div>
+   </main>
+  </body>
+
+</html>
