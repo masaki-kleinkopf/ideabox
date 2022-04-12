@@ -1,4 +1,10 @@
-/* * { border: 1px solid black; } */
+/* * { border: 1px solid black; }
+*/
+
+html{
+  height:100vh;
+  width:100vw;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -17,12 +23,14 @@ h2{
 .show-starred{
   color: #E9E9F3;
   background: #5356A4;
+  margin-right: 15px;
+  width:95%;
+  height:45px;
 }
 
 main{
   display: flex;
-  height: 900px;
-  align-items: stretch;
+  background:#eaeaf4;
 }
 
 .main-page{
@@ -32,12 +40,56 @@ main{
 
 .input-field{
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  align-items: center;
   width: 70vw;
   height:300px;
   background-color: #A9AAD2;
+}
+
+.form-width-container{
+  width:50%;
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+
+};
+
+.input{
+  width:100%;
+  height:75%;
+}
+
+#input{
+  width:98%;
+}
+
+
+ input[name="title-input"] {
+  height:80%;
+  width:100%;
+  border-color: #5356A4;
+}
+
+
+input[name="body-input"]{
+  height:85%;
+  border-color: #5356A4;
+}
+
+
+.title-input-container{
+
+
+}
+
+.body-input-container{
+  height:75px;
+}
+
+
+.display{
+
 }
 
 label{
@@ -48,7 +100,30 @@ label{
 .save{
   background-color: #1f1f3d;
   color: #E9E9F3;
+  border-color: #5356A4;
+  width:100%;
+  height:15%;
 }
+
+.search-bar{
+  display: flex;
+}
+
+.search-button{
+  width: 36px;
+  background:#1f1f3d;
+  border:none;
+  padding-top: 5px;
+  border-color: #5356A4;
+}
+
+.saved-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
 
 .idea-card{
   height: 250px;
@@ -64,13 +139,14 @@ label{
 
 .comment{
   display: flex;
+  background-color:#5356A4;
   color: white;
-  background-color: #5356A4;
 }
 
 .card-content{
   padding-left: 15px;
   border: 2px solid #5356A4;
+  background: #fff;
 }
 
 .icons{
@@ -81,6 +157,7 @@ label{
 .nav{
   background-color: #1f1f3d;
   width: 30%;
-  height: 100%;
+  height: inherit;
+  /*overflow: auto; */
   padding-left: 15px;
 }
