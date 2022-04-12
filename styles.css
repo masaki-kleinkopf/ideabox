@@ -1,4 +1,9 @@
-/* * { border: 1px solid black; } */
+ * { border: 1px solid black; }
+
+html{
+  height:100vh;
+  width:100vw;
+}
 
 body{
   font-family: 'Open Sans', sans-serif;
@@ -21,8 +26,7 @@ h2{
 
 main{
   display: flex;
-  height: 900px;
-  align-items: stretch;
+  background:#eaeaf4;
 }
 
 .main-page{
@@ -40,6 +44,19 @@ main{
   background-color: #A9AAD2;
 }
 
+.input{
+  width:50%;
+}
+
+#input{
+  width:100%
+}
+
+
+.display{
+
+}
+
 label{
   color: #1f1f3d;
   font-weight: bold;
@@ -49,6 +66,25 @@ label{
   background-color: #1f1f3d;
   color: #E9E9F3;
 }
+
+.search-bar{
+  display: flex;
+}
+
+.search-button{
+  width: 36px;
+  background:#1f1f3d;
+  border:none;
+  padding-top: 5px;
+}
+
+.saved-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding: 20px;
+}
+
 
 .idea-card{
   height: 250px;
@@ -64,13 +100,14 @@ label{
 
 .comment{
   display: flex;
+  background-color:#5356A4;
   color: white;
-  background-color: #5356A4;
 }
 
 .card-content{
   padding-left: 15px;
   border: 2px solid #5356A4;
+  background: #fff;
 }
 
 .icons{
@@ -81,6 +118,7 @@ label{
 .nav{
   background-color: #1f1f3d;
   width: 30%;
-  height: 100%;
+  height: inherit;
+  /*overflow: auto; */
   padding-left: 15px;
 }
