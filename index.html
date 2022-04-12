@@ -15,25 +15,25 @@
     <div class='main-page'>
     <section class='input-section'>
       <form class='input-field'>
-        <div class='input'>
-          <label for='title-input'>Title</label><br>
-          <input type='text' name='title-input' id='input'>
-        </div>
-        <div class='input'>
-          <label for='body-input'>Body</label><br>
-          <input type='text' name='body-input' id='input'>
-        </div>
+        <div class='form-width-container'>
+          <div class='title-input-container'>
+            <label for='title-input'>Title</label><br>
+            <input type='text' name='title-input' id='input'>
+          </div>
+          <div class='body-input-container'>
+            <label for='body-input'>Body</label><br>
+            <input type='text' name='body-input' id='input'>
+          </div>
 
-        <button class='save'>Save</button>
-        <div>
+          <button class='save'>Save</button>
           <div class='search-bar'action='search'>
             <button class='search-button'>
               <img class='search-icon' src='./assets/search.svg'>
-            </div>
-            <input type="text" placeholder="Search ideas" name="search">
+            </button>
+            <input type="text" placeholder="Search ideas" name="search" id='input'>
           </div>
-        <div>
-       </form>
+        </div>
+        </form>
     </section>
     <section class='display'>
       <article class='saved-cards-grid'>
@@ -117,4 +117,5 @@
     </div>
    </main>
   </body>
+
 </html>
