@@ -5,43 +5,39 @@
   </head>
   <body>
     <main>
-     <section class='nav'>
-      <h1>IdeaBox</h1><hr>
-      <h2>Filter Starred Ideas<h2>
-      <button class='show-starred'>Show Starred Ideas</button><hr>
-    </section>
-
-    <div class='main-page'>
-    <section class='input-section'>
-      <form class='input-field'>
-        <div class='form-width-container'>
-          <div class='title-input-container'>
-            <label for='title-input'>Title</label><br>
-            <input class="user-title" type='text' name='title-input' id='input'>
-          </div>
-          <div class='body-input-container'>
-            <label for='body-input'>Body</label><br>
-            <input class="user-body" type='text' name='body-input' id='input'>
-          </div>
-
-          <button class='save-button' disabled>Save</button>
-          <div class='search-bar'action='search'>
-            <button class='search-button'>
-              <img class='search-icon' src='./assets/search.svg'>
-            </button>
-            <input type="text" placeholder="Search ideas" name="search" id='input'>
-          </div>
-        </div>
-        </form>
-    </section>
-    <section class='display'>
-      <article class='saved-cards-grid'>
-      </article>
-    </section>
-    </div>
+      <section class='nav'>
+        <h1>IdeaBox</h1><hr>
+        <h2>Filter Starred Ideas<h2>
+        <button class='show-starred'>Show Starred Ideas</button><hr>
+      </section>
+      <div class='main-page'>
+        <section class='input-section'>
+          <form class='input-field'>
+            <div class='form-width-container'>
+              <div class='title-input-container'>
+                <label for='title-input'>Title</label><br>
+                <textarea class="user-title" type='text' name='title-input' id='input'></textarea>
+              </div>
+              <div class='body-input-container'>
+                <label for='body-input'>Body</label><br>
+                <textarea class="user-body" type='text' name='body-input' id='input'></textarea>
+              </div>
+              <button class='save-button' disabled>Save</button>
+              <div class='search-bar'action='search'>
+                <button class='search-button'>
+                <img class='search-icon' src='./assets/search.svg'>
+                </button>
+                <input type="text" placeholder="Search ideas" name="search" id='input'>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section class='display'>
+          <article class='saved-cards-grid'></article>
+        </section>
+      </div>
    </main>
    <script src='./Idea.js'></script>
    <script src='./main.js'></script>
   </body>
-
 </html>

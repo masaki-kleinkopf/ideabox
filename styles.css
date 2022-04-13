@@ -8,17 +8,17 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
   margin: 0;
+  height: inherit;
 }
 
 h1 {
-  color: #e9e9f3;
+  color: #E9E9F3;
   font-weight: bold;
 }
 
 h2 {
-  color: #bfbfdd;
+  color: #BFBFDD;
   font-size: 16px;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -32,8 +32,8 @@ hr {
 }
 
 .show-starred {
-  color: #e9e9f3;
-  background: #5356a4;
+  color: #E9E9F3;
+  background: #5356A4;
   font-size: 20px;
   margin-right: 15px;
   margin-bottom: 25px;
@@ -43,7 +43,8 @@ hr {
 
 main {
   display: flex;
-  background: #eaeaf4;
+  background: #EAEAF4;
+  height: inherit;
 }
 
 .main-page {
@@ -56,7 +57,7 @@ main {
   justify-content: space-around;
   width: 70vw;
   height: 300px;
-  background-color: #a9aad2;
+  background-color: #A9AAD2;
 }
 
 .form-width-container {
@@ -76,37 +77,36 @@ main {
   width: 98%;
 }
 
-input[name="title-input"] {
-  height: 80%;
+.user-title {
+  height: 60%;
   width: 100%;
   border-color: #5356a4;
+  border: 2px solid;
 }
 
-input[name="body-input"] {
+.user-body {
   height: 85%;
   border-color: #5356a4;
+  border: 2px solid;
 }
 
-.title-input-container {
-}
 
 .body-input-container {
-  height: 75px;
+    height: 75px;
+    margin-bottom: 10px;
 }
 
-.display {
-}
 
 label {
-  color: #1f1f3d;
+  color: #1F1F3D;
   font-weight: bold;
 }
 
 .save-button {
-  background-color: #1f1f3d;
-  color: #e9e9f3;
+  background-color: #1F1F3D;
+  color: #E9E9F3;
   font-size: 20px;
-  border-color: #5356a4;
+  border-color: #5356A4;
   width: 100%;
   height: 15%;
 }
@@ -117,10 +117,10 @@ label {
 
 .search-button {
   width: 36px;
-  background: #1f1f3d;
+  background: #1F1F3D;
   border: none;
   padding-top: 5px;
-  border-color: #5356a4;
+  border-color: #5356A4;
 }
 
 .saved-cards-grid {
@@ -136,7 +136,7 @@ label {
 }
 
 .star {
-  background-color: #1f1f3d;
+  background-color: #1F1F3D;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -144,14 +144,14 @@ label {
 
 .comment {
   display: flex;
-  background-color: #5356a4;
+  background-color: #5356A4;
   color: white;
 }
 
 .card-content {
   padding-left: 15px;
-  border: 2px solid #5356a4;
-  background: #fff;
+  border: 2px solid #5356A4;
+  background: #FFF;
 }
 
 .icons {
@@ -160,9 +160,8 @@ label {
 }
 
 .nav {
-  background-color: #1f1f3d;
+  background-color: #1F1F3D;
   width: 30%;
   height: inherit;
-  /*overflow: auto; */
   padding-left: 15px;
 }
