@@ -111,6 +111,15 @@ label {
   height: 15%;
 }
 
+.save-button:disabled{
+  background-color: #5356a4;
+  cursor: not-allowed;
+}
+
+button{
+  cursor: pointer;
+}
+
 .search-bar {
   display: flex;
 }

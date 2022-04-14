@@ -7,6 +7,7 @@ var inputForm = document.querySelector(".input-field");
 saveButton.addEventListener("click", getUserInput);
 titleInput.addEventListener("input", checkValue);
 bodyInput.addEventListener("input", checkValue);
+savedGrid.addEventListener("click", checkClick);
 
 var ideasArray = [];
 
@@ -40,8 +41,8 @@ function showSavedCards() {
   for (var i = 0; i < ideasArray.length; i++) {
     displayGrid += `<article class='idea-card'>
     <div class='star'>
-        <img class='icons' src='./assets/star-active.svg'>
-        <img class='icons' src='./assets/menu-close.svg'>
+        <img class='icons star' src=${ideasArray[i].src} id=${ideasArray[i].id}>
+        <img class='icons close' src='./assets/menu-close.svg' id=${ideasArray[i].id}>
     </div>
     <div class='card-content'>
       <h3>${ideasArray[i].title}</h3>
@@ -54,4 +55,32 @@ function showSavedCards() {
   </article>`;
   }
   savedGrid.innerHTML = displayGrid;
+}
+
+function checkClick(event){
+  if (event.target.className === 'icons close'){
+    deleteCard(event);
+  }
+  if (event.target.className === 'icons star'){
+    saveStarredCard(event);
+  }
+}
+
+
+function deleteCard(event){
+    for (var i = 0; i < ideasArray.length; i++){
+        if (event.target.id == ideasArray[i].id){
+          ideasArray.splice(i,1);
+        }
+    }
+  showSavedCards();
+}
+
+function saveStarredCard(event){
+  for (var i = 0; i < ideasArray.length; i++){
+      if (event.target.id == ideasArray[i].id){
+        ideasArray[i].updateIdea();
+      }
+    }
+  showSavedCards();
 }
