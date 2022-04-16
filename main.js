@@ -1,30 +1,19 @@
-var titleInput = document.querySelector(".user-title");
 var bodyInput = document.querySelector(".user-body");
+var inputForm = document.querySelector(".input-field");
 var saveButton = document.querySelector(".save-button");
 var showStarredButton = document.querySelector(".show-starred");
 var savedGrid = document.querySelector(".saved-cards-grid");
-var inputForm = document.querySelector(".input-field");
+var titleInput = document.querySelector(".user-title");
 
+bodyInput.addEventListener("input", checkValue);
 saveButton.addEventListener("click", getUserInput);
 showStarredButton.addEventListener("click", showSaved);
-titleInput.addEventListener("input", checkValue);
-bodyInput.addEventListener("input", checkValue);
 savedGrid.addEventListener("click", checkClick);
+titleInput.addEventListener("input", checkValue);
 
 var ideasArray = [];
 var savedArray = [];
 
-function showSaved() {
-  if (showStarredButton.id === "show-star") {
-    showStarredButton.innerText = "Show All Ideas";
-    showStarredButton.id = "show-all";
-    showCards(savedArray);
-  } else {
-    showStarredButton.innerText = "Show Starred Ideas";
-    showStarredButton.id = "show-star";
-    showCards(ideasArray);
-  }
-}
 
 function checkValue() {
   if (bodyInput.value && titleInput.value) {
@@ -54,20 +43,21 @@ function addCardToArray(card) {
 function showCards(array) {
   var displayGrid = "";
   for (var i = 0; i < array.length; i++) {
-    displayGrid += `<article class='idea-card'>
-    <div class='star'>
-        <img class='icons star' src=${array[i].src} id=${array[i].id}>
-        <img class='icons close' src='./assets/menu-close.svg' id=${array[i].id}>
-    </div>
-    <div class='card-content'>
-      <h3>${array[i].title}</h3>
-      <p>${array[i].body}</p>
-    </div>
-    <div class='comment'>
-      <img class='icons' src='./assets/comment.svg'>
-      <p>Comment</p>
-    </div>
-  </article>`;
+    displayGrid +=
+    `<article class='idea-card'>
+        <div class='star'>
+          <img class='icons star' src=${array[i].src} id=${array[i].id}>
+          <img class='icons close' src='./assets/menu-close.svg' id=${array[i].id}>
+        </div>
+        <div class='card-content'>
+          <h3>${array[i].title}</h3>
+          <p>${array[i].body}</p>
+        </div>
+        <div class='comment'>
+          <img class='icons' src='./assets/comment.svg'>
+          <p>Comment</p>
+        </div>
+    </article>`;
   }
   savedGrid.innerHTML = displayGrid;
 }
@@ -108,5 +98,17 @@ function saveStarredCard() {
       newArray.push(ideasArray[i]);
     }
     savedArray = newArray;
+  }
+}
+
+function showSaved() {
+  if (showStarredButton.id === "show-star") {
+    showStarredButton.innerText = "Show All Ideas";
+    showStarredButton.id = "show-all";
+    showCards(savedArray);
+  } else {
+    showStarredButton.innerText = "Show Starred Ideas";
+    showStarredButton.id = "show-star";
+    showCards(ideasArray);
   }
 }
