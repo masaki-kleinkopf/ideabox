@@ -15,7 +15,15 @@ var ideasArray = [];
 var savedArray = [];
 
 function showSaved() {
-  showCards(savedArray);
+  if (showStarredButton.id === "show-star") {
+    showStarredButton.innerText = "Show All Ideas";
+    showStarredButton.id = "show-all";
+    showCards(savedArray);
+  } else {
+    showStarredButton.innerText = "Show Starred Ideas";
+    showStarredButton.id = "show-star";
+    showCards(ideasArray);
+  }
 }
 
 function checkValue() {
