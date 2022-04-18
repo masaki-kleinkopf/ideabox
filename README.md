@@ -22,6 +22,7 @@ Visit IdeaBox to store all your useful and not so useful ideas. Ideas to impress
 ## Illustrations
 
 ![IdeaBox gif](https://media.giphy.com/media/wb3U2AY7lglxwmNUkI/giphy.gif)
+![IdeaBox gif](https://media.giphy.com/media/C9qVxitGc2pthPdidt/giphy.gif)
 
 ## Deployed Page
 
@@ -35,7 +36,7 @@ Visit our published IdeaBox page [here](https://masaki-kleinkopf.github.io/ideab
 
 ## Contributors
 
-- [Megan Schuetz](https://github.com/megschuetzhttps://github.com/megschuetz)
+- [Megan Schuetz](https://github.com/megschuetz)
 - [Grant Beard](https://github.com/GrantXBeard)
 - [Masaki Kleinkopf](https://github.com/masaki-kleinkopf)
 
