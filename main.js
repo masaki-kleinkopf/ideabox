@@ -14,7 +14,6 @@ titleInput.addEventListener("input", checkValue);
 var ideasArray = [];
 var savedArray = [];
 
-
 function checkValue() {
   if (bodyInput.value && titleInput.value) {
     saveButton.disabled = false;
@@ -45,8 +44,7 @@ function addCardToArray(card) {
 function showCards(array) {
   var displayGrid = "";
   for (var i = 0; i < array.length; i++) {
-    displayGrid +=
-    `<article class='idea-card'>
+    displayGrid += `<article class='idea-card'>
         <div class='star'>
           <img class='icons star' src=${array[i].src} id=${array[i].id}>
           <img class='icons close' src='./assets/menu-close.svg' id=${array[i].id}>
@@ -104,13 +102,13 @@ function saveStarredCard() {
 }
 
 function showSaved() {
-  if (showStarredButton.id === "show-star") {
+  if (showStarredButton.id === "showStar") {
     showStarredButton.innerText = "Show All Ideas";
-    showStarredButton.id = "show-all";
+    showStarredButton.id = "showAll";
     showCards(savedArray);
   } else {
     showStarredButton.innerText = "Show Starred Ideas";
-    showStarredButton.id = "show-star";
+    showStarredButton.id = "showStar";
     showCards(ideasArray);
   }
 }
