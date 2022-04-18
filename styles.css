@@ -36,6 +36,7 @@ hr {
   margin-bottom: 25px;
   width: 95%;
   height: 45px;
+  border:none;
 }
 
 main {
@@ -79,12 +80,14 @@ main {
   width: 100%;
   border-color: #5356A4;
   border: 2px solid;
+  resize:none;
 }
 
 .user-body {
   height: 85%;
   border-color: #5356A4;
   border: 2px solid;
+  resize:none;
 }
 
 
@@ -103,6 +106,7 @@ label {
   background-color: #1F1F3D;
   color: #E9E9F3;
   font-size: 20px;
+  border-style: solid 1px;
   border-color: #5356A4;
   width: 100%;
   height: 15%;
