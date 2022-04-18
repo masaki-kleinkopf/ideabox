@@ -18,6 +18,8 @@ var savedArray = [];
 function checkValue() {
   if (bodyInput.value && titleInput.value) {
     saveButton.disabled = false;
+  } else {
+    saveButton.disabled = true;
   }
 }
 
